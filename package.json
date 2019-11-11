@@ -21,6 +21,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
+    "heroku": "^7.35.0",
     "mongo": "^0.1.0",
     "mongodb": "^3.3.3",
     "mongoose": "^5.7.9"
