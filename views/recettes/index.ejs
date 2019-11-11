@@ -1,0 +1,10 @@
+<h2>Toutes les recettes</h2>
+<form action="/recettes" method="GET">
+    <label>Nom de la recette</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Rechercher</button>
+</form>
+<br>
+<% recettes.forEach(recette => {%> 
+    <div><%= recette.name %></div>
+<% } )%>
