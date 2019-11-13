@@ -30,7 +30,7 @@ router.post('/', async(req, res) => {
     })
     try{
         const newRecette = recette.save()
-            // res.redirect(`recettes/${newAuthor.id}`)
+            res.redirect(`recettes/${newRecette.id}`)
             res.redirect(`recettes`)
     }catch{
         res.render('recettes/new',{
