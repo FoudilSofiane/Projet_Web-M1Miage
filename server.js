@@ -9,6 +9,7 @@ const bodyParser = require('body-parser')
 
 const indexRouter = require('./routes/index') //va récupérer infos à partir du fichier index dans le dossier routes
 const recetteRouter = require('./routes/recettes')
+const platRouter = require('./routes/plats')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views') //vues issues du dossier views
@@ -26,6 +27,7 @@ db.once('open', () => console.log('Connecté à Mongoose'))
 
 app.use('/', indexRouter)
 app.use('/recettes', recetteRouter)
+app.use('/plats', platRouter)
 
 app.listen(process.env.PORT || 3000) //le serveur va écouter sur le port 3000
 
